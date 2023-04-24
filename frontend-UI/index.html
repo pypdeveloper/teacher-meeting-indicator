@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Availability Status</title>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+
+            .button {
+                background-color: #4caf50; /* Green */
+                border: none;
+                color: white;
+                padding: 25px 50px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 24px;
+                margin: 20px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+            .available {
+                background-color: green;
+            }
+
+            .not-available {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Availability Status</h1>
+            <button class="button available" onClick="sendPOSTRequest()">Available</button>
+            <button class="button not-available">Not Available</button>
+        </div>
+    </body>
+</html>
